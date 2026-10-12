@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pricing Table</title>
+<style>
+body{
+ font-family: Arial;
+ background: #f2f2f2;
+ margin:0;
+ padding:20px;
+}
+h1{ text-align:center; }
+
+.pricing{
+ display:flex;
+ gap:20px;
+ justify-content:center;
+ flex-wrap:wrap;
+}
+
+.card{
+ background:white;
+ border:1px solid #ccc;
+ width:250px;
+ padding:20px;
+ text-align:center;
+ border-radius:10px;
+}
+.card h2{ margin:10px 0; }
+.price{ font-size:28px; font-weight:bold; margin:10px 0; }
+.card ul{ list-style:none; padding:0; }
+.card li{ margin:8px 0; }
+
+button{
+ padding:10px 20px;
+ border:none;
+ background:black;
+ color:white;
+ border-radius:5px;
+ cursor:pointer;
+}
+button:hover{
+ background:blue;
+}
+
+.popular{
+ border:2px solid blue;
+ box-shadow:0 5px 15px rgba(0,0,0,0.2);
+ transform:scale(1.05);
+}
+.badge{
+ background:blue;
+ color:white;
+ padding:5px 10px;
+ border-radius:20px;
+ font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="pricing">
+
+<div class="card">
+<h2>Basic</h2>
+<div class="price">₹499 /mo</div>
+<ul>
+<li>5 Projects</li>
+<li>10GB Storage</li>
+<li>Email Support</li>
+</ul>
+<button>Choose Plan</button>
+</div>
+
+<div class="card popular">
+<span class="badge">POPULAR</span>
+<h2>Pro</h2>
+<div class="price">₹1499 /mo</div>
+<ul>
+<li>50 Projects</li>
+<li>100GB Storage</li>
+<li>Priority Support</li>
+</ul>
+<button>Choose Plan</button>
+</div>
+
+<div class="card">
+<h2>Enterprise</h2>
+<div class="price">₹4999 /mo</div>
+<ul>
+<li>Unlimited Projects</li>
+<li>1TB Storage</li>
+<li>24/7 Support</li>
+</ul>
+<button>Choose Plan</button>
+</div>
+
+</div>
+
+</body>
+</html>
